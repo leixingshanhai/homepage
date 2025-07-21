@@ -201,7 +201,7 @@ html.dark::view-transition-new(root) {
     margin-right: 0px;
 }
 .navSwitch {
-    width: 80px;
+    width: 70px;
     height: 43px;
     display: flex;
     backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
