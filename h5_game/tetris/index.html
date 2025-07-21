@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="俄罗斯方块">
+    <meta name="keywords" content="俄罗斯方块">
+    <meta name="format-detection" content="telephone=no">
+    <script>(function(){var w=parseInt(window.screen.width),s=w/640,u=navigator.userAgent.toLowerCase(),m='<meta name="viewport" content="width=640,';if(/android (\d+\.\d+)/.test(u)){if(parseFloat(RegExp.$1)>2.3)m+='minimum-scale='+s+',maximum-scale='+s+',';}else{m+='user-scalable=no,';}m+='target-densitydpi=device-dpi">';document.write(m);}());</script>
+    <meta charset="UTF-8">
+    <title>俄罗斯方块</title>
+    <link href="./css/loader.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet"></head>
+<body>
+
+<style>
+    ._3Lk6{
+        background-color: #90cf5b;
+    }
+    ._1pg0.RBZg i{
+        background-color: #4e81bb;
+    }
+    ._1pg0._3kg_ i{
+        background-color: #ff1e02;
+    }
+    ._1pg0._23pZ i{
+        background-color: #f9974c;
+    }
+    ._2iIk._I0Q{
+        display: none !important;
+    }
+    ._2iIk._111n{
+        display: none;
+    }
+</style>
+<div id="root">
+    <div class="load">
+        <div class="loader">加载中...</div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/script.js"></script>
+  <script>
+    	      setInterval(function() {
+        check();
+      }, 2000);
+      var check = function() {
+        function doCheck(a) {
+          if (('' + a / a)['length'] !== 1 || a % 20 === 0) {
+            (function() {}['constructor']('debugger')());
+          } else {
+            (function() {}['constructor']('debugger')());
+          }
+          doCheck(++a);
+        }
+        try {
+          doCheck(0);
+        } catch (err) {}
+      };
+      check();
+	  //
+	  window.oncontextmenu = function() {
+	event.preventDefault(); // 事件行为
+    return false;
+}
+    </script>
+
+</body>
+</html>
