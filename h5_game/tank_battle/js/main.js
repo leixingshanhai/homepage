@@ -34,7 +34,7 @@ $(document).ready(function(){
 	initObject();
 	
 	setInterval(gameLoop,20);
-	setViewportSize(); // 初始化时也调用一次
+	//setViewportSize(); // 初始化时也调用一次
 });
 
 function setViewportSize() {
@@ -62,7 +62,7 @@ function initScreen(){
 	overCtx = $("#overCanvas")[0].getContext("2d");
 	$("#overCanvas").attr({"width":SCREEN_WIDTH});
 	$("#overCanvas").attr({"height":SCREEN_HEIGHT});
-	$("#canvasDiv").css({"width":SCREEN_WIDTH});
+	$("#canvasDiv").css({"width":512});
 	$("#canvasDiv").css({"height":SCREEN_HEIGHT});
 	$("#canvasDiv").css({"background-color":"#000000"});
 	
