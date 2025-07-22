@@ -34,7 +34,7 @@ $(document).ready(function(){
 	initObject();
 	
 	setInterval(gameLoop,20);
-	setViewportSize(); // 初始化时也调用一次
+	//setViewportSize(); // 初始化时也调用一次
 });
 
 function setViewportSize() {
