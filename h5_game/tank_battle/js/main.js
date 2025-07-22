@@ -34,7 +34,16 @@ $(document).ready(function(){
 	initObject();
 	
 	setInterval(gameLoop,20);
+	setViewportSize(); // 初始化时也调用一次
 });
+
+function setViewportSize() {
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    
+    document.body.style.width = `${vw}px`;
+    document.body.style.height = `${vh}px`;
+}
 
 function initScreen(){
 	var canvas = $("#stageCanvas");
@@ -53,8 +62,8 @@ function initScreen(){
 	overCtx = $("#overCanvas")[0].getContext("2d");
 	$("#overCanvas").attr({"width":SCREEN_WIDTH});
 	$("#overCanvas").attr({"height":SCREEN_HEIGHT});
-	$("#canvasDiv").css({"width":512});
-	$("#canvasDiv").css({"height":750});
+	$("#canvasDiv").css({"width":SCREEN_WIDTH});
+	$("#canvasDiv").css({"height":SCREEN_HEIGHT});
 	$("#canvasDiv").css({"background-color":"#000000"});
 	
 }
