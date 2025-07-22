@@ -35,7 +35,7 @@ $(document).ready(function(){
 	
 	setInterval(gameLoop,20);
 	setViewportSize(); // 初始化时也调用一次
-	document.body.style.transform = 'scale(0.9)'; // 将网页缩放至80%
+	// document.body.style.transform = 'scale(0.9)'; // 将网页缩放至80%
 });
 
 function setViewportSize() {
