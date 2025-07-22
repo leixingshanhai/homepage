@@ -28,7 +28,5 @@
   
   function cardClick(type){
 	  var url = type + '/index.html';
-	  if(type == 'tetris'){
-		  window.open(url,'h5_game_page');
-	  }
+	  window.open(url,'h5_game_page');
   }
