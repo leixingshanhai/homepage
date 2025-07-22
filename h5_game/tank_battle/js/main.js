@@ -34,6 +34,7 @@ $(document).ready(function(){
 	initObject();
 	
 	setInterval(gameLoop,20);
+	document.body.style.transform = 'scale(0.8)'; // 将网页缩放至80%
 	//setViewportSize(); // 初始化时也调用一次
 });
 
