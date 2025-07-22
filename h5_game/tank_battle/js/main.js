@@ -53,8 +53,8 @@ function initScreen(){
 	overCtx = $("#overCanvas")[0].getContext("2d");
 	$("#overCanvas").attr({"width":SCREEN_WIDTH});
 	$("#overCanvas").attr({"height":SCREEN_HEIGHT});
-	$("#canvasDiv").css({"width":SCREEN_WIDTH});
-	$("#canvasDiv").css({"height":SCREEN_HEIGHT});
+	$("#canvasDiv").css({"width":512});
+	$("#canvasDiv").css({"height":750});
 	$("#canvasDiv").css({"background-color":"#000000"});
 	
 }
