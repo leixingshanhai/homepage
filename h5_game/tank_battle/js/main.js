@@ -35,7 +35,6 @@ $(document).ready(function(){
 	
 	setInterval(gameLoop,20);
 	setViewportSize(); // 初始化时也调用一次
-	// document.body.style.transform = 'scale(0.9)'; // 将网页缩放至80%
 });
 
 function setViewportSize() {
@@ -49,21 +48,21 @@ function initScreen(){
 	var canvas = $("#stageCanvas");
 	ctx = canvas[0].getContext("2d");
 	canvas.attr({"width":SCREEN_WIDTH});
-	canvas.attr({"height":SCREEN_HEIGHT-30});
+	canvas.attr({"height":SCREEN_HEIGHT});
 	wallCtx = $("#wallCanvas")[0].getContext("2d");
 	grassCtx = $("#grassCanvas")[0].getContext("2d");
 	$("#wallCanvas").attr({"width":SCREEN_WIDTH});
-	$("#wallCanvas").attr({"height":SCREEN_HEIGHT-30});
+	$("#wallCanvas").attr({"height":SCREEN_HEIGHT});
 	$("#grassCanvas").attr({"width":SCREEN_WIDTH});
-	$("#grassCanvas").attr({"height":SCREEN_HEIGHT-30});
+	$("#grassCanvas").attr({"height":SCREEN_HEIGHT});
 	tankCtx = $("#tankCanvas")[0].getContext("2d");
 	$("#tankCanvas").attr({"width":SCREEN_WIDTH});
-	$("#tankCanvas").attr({"height":SCREEN_HEIGHT-30});
+	$("#tankCanvas").attr({"height":SCREEN_HEIGHT});
 	overCtx = $("#overCanvas")[0].getContext("2d");
 	$("#overCanvas").attr({"width":SCREEN_WIDTH});
-	$("#overCanvas").attr({"height":SCREEN_HEIGHT-30});
+	$("#overCanvas").attr({"height":SCREEN_HEIGHT});
 	$("#canvasDiv").css({"width":512});
-	$("#canvasDiv").css({"height":SCREEN_HEIGHT-30});
+	$("#canvasDiv").css({"height":SCREEN_HEIGHT});
 	$("#canvasDiv").css({"background-color":"#000000"});
 	
 }
