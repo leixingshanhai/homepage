@@ -166,8 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var downDiv = document.getElementById('arrow_down');
     var leftDiv = document.getElementById('arrow_left');
     var rightDiv = document.getElementById('arrow_right');
-    var lastLevelDiv = document.getElementById('last_level');
     var preLevelDiv = document.getElementById('pre_level');
+    var nextLevelDiv = document.getElementById('next_level');
     var startDiv = document.getElementById('start');
     var fireDiv = document.getElementById('fire');
 	// PC网页鼠标左键按下、鼠标左键松开
@@ -238,31 +238,31 @@ document.addEventListener('DOMContentLoaded', function() {
 		keys.remove(68);
 	});
 	
-	lastLevelDiv.addEventListener('mousedown', function() {
+	preLevelDiv.addEventListener('mousedown', function() {
 		operFun(80);
 		document.addEventListener('mouseup', function endClick(event) {
 			keys.remove(80);
 			document.removeEventListener('mouseup', endClick);
 		});
 	});
-	lastLevelDiv.addEventListener('touchstart', function() {
+	preLevelDiv.addEventListener('touchstart', function() {
 		operFun(80);
 	});
-	lastLevelDiv.addEventListener('touchend', function() {
+	preLevelDiv.addEventListener('touchend', function() {
 		keys.remove(80);
 	});
     
-	preLevelDiv.addEventListener('mousedown', function() {
+	nextLevelDiv.addEventListener('mousedown', function() {
 		operFun(78);
 		document.addEventListener('mouseup', function endClick(event) {
 			keys.remove(78);
 			document.removeEventListener('mouseup', endClick);
 		});
 	});
-	preLevelDiv.addEventListener('touchstart', function() {
+	nextLevelDiv.addEventListener('touchstart', function() {
 		operFun(78);
 	});
-	preLevelDiv.addEventListener('touchend', function() {
+	nextLevelDiv.addEventListener('touchend', function() {
 		keys.remove(78);
 	});
 	

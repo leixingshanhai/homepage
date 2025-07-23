@@ -361,18 +361,22 @@ a img {
     display: flex;
 }
 
-.last_level {
+.pre_level {
 	width: 64px;
 	height: 56px;
 	font-size: 18px;
 	font-weight: 700;
 	text-align: center;
 	line-height: 56px;
+	user-select: none;
+	- webkit-user-select: none;
+	- moz-user-select: none;
+	- ms-user-select: none;
 	border: 3px solid #515151;
 	border-radius: 10px;
 }
 
-.pre_level {
+.next_level {
 	width: 64px;
 	height: 56px;
 	margin-left: 20px;
@@ -380,6 +384,10 @@ a img {
 	font-weight: 700;
 	text-align: center;
 	line-height: 56px;
+	user-select: none;
+	- webkit-user-select: none;
+	- moz-user-select: none;
+	- ms-user-select: none;
 	border: 3px solid #515151;
 	border-radius: 10px;
 }
