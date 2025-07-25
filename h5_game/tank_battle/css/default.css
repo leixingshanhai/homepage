@@ -403,6 +403,10 @@ a img {
 	font-weight: 700;
 	text-align: center;
 	line-height: 56px;
+	user-select: none;
+	- webkit-user-select: none;
+	- moz-user-select: none;
+	- ms-user-select: none;
 	border: 3px solid #515151;
 	border-radius: 10px;
 }
@@ -416,6 +420,10 @@ a img {
 	font-weight: 700;
 	text-align: center;
 	line-height: 56px;
+	user-select: none;
+	- webkit-user-select: none;
+	- moz-user-select: none;
+	- ms-user-select: none;
 	border: 3px solid #515151;
 	border-radius: 10px;
 }
