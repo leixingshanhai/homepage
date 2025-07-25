@@ -625,7 +625,7 @@ html.dark::view-transition-new(root) {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 30%;
     height: 100%;
 }
 
