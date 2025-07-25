@@ -1,5 +1,5 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0; overflow: hidden;width: 512px; height: 100%; }
+body, html { font-size: 100%; padding: 0; margin: 0; overflow: hidden;width: 100%; height: 100%; }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
@@ -34,7 +34,12 @@ a img {
 	margin: 0;
 	/*padding: 2em;*/
 }
-
+.outerDiv{
+	display: flex;
+	justify-content: center; /* Horizontal centering */
+	align-items: center;    /* Vertical centering */
+	height: 100vh; /* Example height, adjust as needed */
+}
 .container {
 	height: 100%;
 }
@@ -62,7 +67,6 @@ a img {
 
 /* Main Content */
 .main {
-	max-width: 512px;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
